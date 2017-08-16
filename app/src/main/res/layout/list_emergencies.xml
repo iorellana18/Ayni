@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="12/12/12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:text="Nombre emergencia"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toLeftOf="@+id/fecha"
+        android:layout_toStartOf="@+id/fecha"
+        android:layout_height="wrap_content"
+        android:id="@+id/emergencyNameText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="Tipo emergencia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencyNameText"
+        android:id="@+id/emergencyTypeText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="Calle muy bonita 123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencyTypeText"
+        android:id="@+id/emergencyAdressText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+</RelativeLayout>

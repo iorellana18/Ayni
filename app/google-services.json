@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "828682334476",
+    "firebase_url": "https://ayni-voluntarios.firebaseio.com",
+    "project_id": "ayni-voluntarios",
+    "storage_bucket": "ayni-voluntarios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828682334476:android:68f05fb9f45a2bf0",
+        "android_client_info": {
+          "package_name": "cl.citiaps.coordinaciondevoluntarios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828682334476-k1un0hh67dpgqasd07rpcmb7csc0uist.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9lAwzxmZq2R5poA7VBxE8vW_jrj0FDmk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

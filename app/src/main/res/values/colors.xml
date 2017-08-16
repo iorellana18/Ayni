@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Bases-->
+    <color name="colorPrimary">#2a5f8b</color>
+    <color name="colorPrimaryDark">#08365c</color>
+    <color name="colorAccent">#D86636</color>
+
+    <!-- Primary -->
+    <color name="primary_main">#D86636</color>
+    <color name="primary_dark">#B54819</color>
+    <color name="primary_darker">#8F2D04</color>
+    <color name="primary_light">#F0885C</color>
+    <color name="primary_lighter">#FFAE8B</color>
+
+    <!-- Secondary -->
+    <color name="secondary_main">#2A5F8B</color>
+    <color name="secondary_dark">#2A5F8B</color>
+    <color name="secondary_darker">#08365c</color>
+    <color name="secondary_light">#42739b</color>
+    <color name="secondary_lighter">#6A95B8</color>
+
+    <!-- Complement -->
+    <color name="complement_main">#259367</color>
+    <color name="complement_dark">#117B50</color>
+    <color name="complement_darker">#02613B</color>
+    <color name="complement_light">#3FA37B</color>
+    <color name="complement_lighter">#68BF9C</color>
+
+    <!-- Gray -->
+    <color name="gray_main">#808080</color>
+    <color name="gray_dark">#4E4E4E</color>
+    <color name="gray_darker">#0A0A0A</color>
+    <color name="gray_light">#ACACAC</color>
+    <color name="gray_lighter">#DDDCDC</color>
+    <color name="light">#ffffff</color>
+    <color name="colorPrimaryDark2">#072d4d</color>
+
+</resources>

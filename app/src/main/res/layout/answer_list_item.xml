@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="Respuesta larga de coordinador hacia el problema descrito anteriormente." />
+
+    <TextView
+        android:id="@+id/autorAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nombre del Autor"
+        android:textColor="@color/light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/answerText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Por: "
+        android:textColor="@color/light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignBaseline="@+id/autorAnswer"
+        android:layout_alignBottom="@+id/autorAnswer"
+        android:layout_toLeftOf="@+id/autorAnswer"
+        android:layout_toStartOf="@+id/autorAnswer" />
+
+
+</RelativeLayout>

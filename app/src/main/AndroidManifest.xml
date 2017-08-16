@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cl.citiaps.coordinaciondevoluntarios">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_ico_voluntarios"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activity.IndexNoEmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EmergenciesActivity"
+            android:parentActivityName=".activity.IndexNoEmergencyActivity" />
+        <activity
+            android:name=".activity.MissionsActivity"
+            android:parentActivityName=".activity.IndexNoEmergencyActivity" />
+        <activity
+            android:name=".activity.PerfilActivity"
+            android:parentActivityName=".activity.IndexNoEmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EmergencyDetailActivity"
+            android:parentActivityName=".activity.EmergenciesActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD2Sj5yx0gd0vVODY_8gmnfPLuF7GFRtWo" />
+
+        <activity
+            android:name=".activity.MissionRecruitedActivity"
+            android:parentActivityName=".activity.MissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MissionRecruitedDetailActivity"
+            android:parentActivityName=".activity.MissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActiveMissionActivity"
+            android:parentActivityName=".activity.IndexNoEmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FinishedMissonActivity"
+            android:parentActivityName=".activity.IndexNoEmergencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:parentActivityName=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.MissionTakeActivity"
+            android:parentActivityName=".activity.MissionTakeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ProblemsActivity"
+            android:parentActivityName=".activity.ProblemsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.ProblemDetailActivity"
+            android:parentActivityName=".activity.ProblemDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.MessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.MessagingIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activity.ReportProblemActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notifications" />
+
+        <activity android:name=".activity.GuidesActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Ayni</string><!-- Ayni - Coordinacion de voluntarios -->
+
+    <!-- Strings related to login -->
+    <string name="user_token">token</string>
+    <string name="bad_password">Correo o contraseña incorrectas</string>
+    <string name="login_text">Inicio de Sesión</string>
+    <string name="prompt_email">Correo electrónico</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Ingresar</string>
+    <string name="action_new_account">Crear cuenta</string>
+    <string name="action_new_account_two">Registrarme</string>
+    <string name="action_sign_in_short">Ingresar</string>
+    <string name="action_save_profile">Actualizar Datos</string>
+    <string name="error_invalid_email">La dirección de correo es inválida</string>
+    <string name="error_invalid_password">La contraseña es muy corta</string>
+    <string name="error_authentication_failed">La dirección de correo o la contraseña son incorrectas</string>
+    <string name="user_data_preference_file_key">cl.citiaps.coordinaciondevoluntarios.USER_DATA_PREFERENCE</string>
+    <string name="user_id_preference_key">user_id</string>
+    <string name="volunteer_id_preference_key">volunteer_id</string>
+
+    <string name="emergencies_number_preference_key">emergencies_number</string>
+    <string name="mission_number_preference_key">mission_number</string>
+
+    <string name="google_maps_api_key">AIzaSyD2Sj5yx0gd0vVODY_8gmnfPLuF7GFRtWo</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="skills_text">Habilidades requeridas</string>
+    <string name="participating_interest_text">¿Deseas participar?</string>
+
+    <string name="emergency_details_interest_yes">SÍ</string>
+    <string name="emergency_details_interest_no">NO</string>
+
+    <string name="mission_name">Nombre misión</string>
+    <string name="mission_type">Tipo misión</string>
+    <string name="mission_address">Dirección misión</string>
+    <string name="abilities">Habilidades</string>
+    <string name="mission_participate_question">¿Te gustaría participar?</string>
+    <string name="mission_recruited_interest_yes">SÍ</string>
+    <string name="mission_recruited_interest_no">NO</string>
+    <string name="mission_active_Start">Iniciar Misión</string>
+    <string name="mission_active_finish">Finalizar Misión</string>
+    <string name="mission_active_problemlist">Problemas</string>
+    <string name="mission_active_problem">Informar Problema</string>
+    <string name="mission_guide">Guías</string>
+
+    <string name="mission_address_label">Dirección</string>
+    <string name="mission_description_label">Descripción</string>
+    <string name="mission_description">Descripción de la misión</string>
+    <string name="open_map">Abrir mapa</string>
+
+
+    <!-- menu items-->
+    <string name="logout">Cerrar sesión</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="refresh">Recargar información</string>
+    <string name="notifications">Nuevas notificaciones</string>
+    <string name="finished_mission_title">¡Felicitaciones!</string>
+    <string name="finished_mission_desc">Gracias por participar en la misión</string>
+    <string name="finished_mission_desc2">El coordinador será informado de tu trabajo</string>
+    <string name="back_to_main">Volver al inicio</string>
+    <string name="rate_friends">Evaluar a mis compañeros</string>
+    <string name="empty_mission">No hay misiones en las que has sido reclutado</string>
+    <string name="empty_emergencies">No hay emergencias activas</string>
+    <string name="emergency_list">Emergencias</string>
+    <string name="mission_list">Misiones</string>
+
+
+    <!-- Perfil Strings -->
+    <string name="prompt_nombre">Nombre</string>
+    <string name="prompt_apellido">Apellido</string>
+    <string name="prompt_telefono">Celular personal</string>
+    <string name="prompt_telefono_emergency">Celular de emergencia</string>
+    <string name="has_life_insurance">Seguro de vida</string>
+
+    <!-- Listar problemas -->
+    <string name="noproblem_info">Actualmente no existen problemas asociados</string>
+
+
+    <!-- Enviar problemas -->
+    <string name="problem_send">Enviar</string>
+    <string name="problem_cancel">Cancelar</string>
+    <string name="problem_sent">Tu problema ha sido enviado</string>
+    <string name="problem_error">Error enviando el problema, por favor intenta nuevamente en unos minutos</string>
+    <string name="form_problem">Debes rellenar todos los campos</string>
+
+    <!-- Pantalla principal -->
+    <string name="emergency_button">Emergencias</string>
+    <string name="mission_button">Misiones</string>
+    <string name="current_mission">Misión en curso</string>
+    <string name="no_active_missions">Actualmente no tienes misiones activas</string>
+    <string name="no_alert">Actualmente no tienes nuevas notificaciones</string>
+    <string name="alerts">Tienes notificaciones sin leer</string>
+    <string name="version">Versión 0.9.2</string>
+
+    <integer name="recruited_status_assigned">1</integer>
+    <integer name="recruited_status_accepted">2</integer>
+    <integer name="recruited_status_refused">3</integer>
+    <integer name="recruited_status_started">4</integer>
+    <integer name="recruited_status_finished">5</integer>
+
+    <!-- guías -->
+    <string name="empty_guides">No se han subido guías para esta misión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

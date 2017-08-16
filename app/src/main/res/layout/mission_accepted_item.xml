@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Título"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/titleText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <TextView
+        android:text="0km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titleText"
+        android:layout_marginLeft="300dp"
+        android:id="@+id/distanceText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:text="Tipo misión"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleText"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="3dp"
+        android:id="@+id/disasterTypeText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="12/12/12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/distanceText"
+        android:layout_alignTop="@id/disasterTypeText"
+        android:id="@+id/dateText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="Calle muy bonita 123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/titleText"
+        android:layout_below="@id/disasterTypeText"
+        android:layout_marginTop="3dp"
+        android:id="@+id/meetingPointAdressText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cl.citiaps.coordinaciondevoluntarios.activity.PerfilActivity">
+
+
+        <TextView
+            android:text="Perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textAlignment="center"
+            android:clickable="false"/>
+
+        <EditText
+            android:layout_below="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/prompt_nombre"
+            android:ems="10"
+            android:id="@+id/name" />
+
+        <EditText
+            android:layout_below="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/prompt_apellido"
+            android:ems="10"
+            android:id="@+id/apellido" />
+
+        <EditText
+            android:layout_below="@+id/apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/prompt_telefono"
+            android:ems="10"
+            android:id="@+id/celular" />
+
+        <EditText
+            android:layout_below="@+id/celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="@string/prompt_telefono_emergency"
+            android:ems="10"
+            android:id="@+id/celular_emergencia" />
+
+        <CheckBox
+            android:layout_below="@+id/celular_emergencia"
+            android:id="@+id/has_life_insurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/has_life_insurance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            style="@style/Checkbox"
+            />
+
+        <TextView
+            android:layout_below="@+id/has_life_insurance"
+            android:text="Habilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textAlignment="center"
+            android:clickable="false"/>
+
+        <ListView
+            android:layout_below="@+id/textView6"
+            android:id="@+id/lista_habilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <Button
+            android:layout_below="@+id/lista_habilidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save_profile"
+            android:onClick="saveAbilities"
+            android:id="@+id/save_profile"
+            android:layout_weight="0"
+            android:layout_marginTop="20dp"
+            style="@style/mainButton"/>
+
+
+</RelativeLayout>
