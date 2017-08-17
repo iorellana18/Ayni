@@ -199,8 +199,7 @@ public class IndexNoEmergencyActivity extends AppCompatActivity {
                     Log.d("(1) ***RESPONSE", "body null");
                     hasActiveMission = false;
 
-                }else{
-                    Log.d("(1) ***RESPONSE", response.body().get(0).getMission().getDescription());
+                }else if(response.body()!=null && response.body().size()>0){
                     hasActiveMission = true;
                     missionData = response.body().get(0).getMission();
                     Button currentMissionBtn = (Button) findViewById(R.id.buttonCurrentMission);

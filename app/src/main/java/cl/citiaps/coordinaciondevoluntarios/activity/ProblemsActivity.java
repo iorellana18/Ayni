@@ -92,6 +92,7 @@ public class ProblemsActivity extends AppCompatActivity {
                 if (response.body().getProblems().size() == 0){
                     emptyMission.setVisibility(View.VISIBLE);
                 }
+                missionData = response.body();
             }
 
             @Override
@@ -111,6 +112,8 @@ public class ProblemsActivity extends AppCompatActivity {
                         .baseUrl(ApiInterface.API_URL2)
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
+
+
                 final ProblemData obj = (ProblemData) listView.getAdapter().getItem(position);
                 ApiInterface api = retrofit.create(ApiInterface.class);
                 Call<UserData> call = api.getUser(obj.getUser_id());

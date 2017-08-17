@@ -1,10 +1,12 @@
 package cl.citiaps.coordinaciondevoluntarios.data;
 
+import java.io.Serializable;
+
 /**
  * Created by Ian on 02-08-2017.
  */
-
-public class Files {
+@SuppressWarnings("serial")
+public class Files implements Serializable{
     private int Id;
     private int mission_id;
     private String file;

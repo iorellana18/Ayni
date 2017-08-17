@@ -15,7 +15,8 @@ import retrofit2.http.Path;
  */
 public interface ApiInterface {
     String API_URL = "http://158.170.66.37/api/";
-    String API_URL2 = "http://158.170.140.28:3000/";
+    String API_URL2 = "http://158.170.66.37/api/";
+    //String API_URL2 = "http://158.170.140.28:3000/";
 
     @POST("login")
     Call<LoginData> login(@Body LoginData loginData); // Listo
@@ -23,7 +24,7 @@ public interface ApiInterface {
     @GET("emergency/")
     Call<List<EmergencyData>> emergencies(); //Listo
 
-    @GET("mision/invitaciones")
+    @GET("mision/invitaciones/")
     Call<List<MissionResponse>> misionList(@Header("Authorization")String token); // Listo
 
     @GET("mission/{missionID}")
@@ -32,7 +33,7 @@ public interface ApiInterface {
     @GET("ability/")
     Call<List<Abilities>> getAbilities(); // Listo
 
-    @GET("usuario/informacion")
+    @GET("usuario/informacion/")
     Call<UserData> getUserLoged(@Header("Authorization")String token); // Listo
 
     @GET("mision/activa/")
@@ -50,7 +51,9 @@ public interface ApiInterface {
     @POST("user/apptoken")
     Call<AppTokenData> updateToken(@Body AppTokenData appTokenData); // Listo
 
-    @POST("user")
-    Call<LoginData> postRegister(@Body LoginData loginData);
+    @POST("user/")
+    Call<RegisterData> postRegister(@Body RegisterData registerData);
 
+    @POST("volunteer/")
+    Call<RegistroHabilidad> postAbilities(@Body RegistroHabilidad abilities);
 }

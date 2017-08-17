@@ -26,17 +26,25 @@ public class LoginActivity extends AppCompatActivity {
     private static int userError = 401;
     ProgressBar spinner;
     Button login;
+    Button registro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
         login = (Button)findViewById(R.id.loginButton);
+        registro = (Button)findViewById(R.id.registerButton);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login();
+            }
+        });
+        registro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toRegistro();
             }
         });
 
@@ -112,6 +120,12 @@ public class LoginActivity extends AppCompatActivity {
         }
 
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+
+    public void toRegistro(){
+        Intent intent = new Intent(this,RegisterActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 /*

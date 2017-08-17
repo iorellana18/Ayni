@@ -87,7 +87,7 @@ public class ActiveMissionActivity extends AppCompatActivity {
         missionRecruitData.setRecruiting_status(res.getInteger(R.integer.recruited_status_finished));
         missionRecruitData.setUser_id(userID);
         missionRecruitData.setVolunteer_id(volunteerID);
-        missionRecruitData.setMission_id(missionId);
+        missionRecruitData.setMission_id(missionData.getId());
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         final String token = prefs.getString("token","");
 

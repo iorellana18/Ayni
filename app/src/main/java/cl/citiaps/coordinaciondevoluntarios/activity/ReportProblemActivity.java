@@ -26,7 +26,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -85,6 +84,10 @@ public class ReportProblemActivity extends AppCompatActivity {
                             public void onResponse(String response) {
                                 Toast.makeText(getApplicationContext(), "Problema reportado",
                                         Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(getApplicationContext(),
+                                        ProblemsActivity.class);
+                                intent.putExtra("mission",missionData);
+                                startActivity(intent);
                                 finish();
                             }
                         },

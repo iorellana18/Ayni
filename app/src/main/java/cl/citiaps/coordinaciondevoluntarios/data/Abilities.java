@@ -18,6 +18,13 @@ public class Abilities implements Serializable{
         setChecked(checked);
     }
 
+    public Abilities(){}
+
+    public Abilities(int Id, String ability){
+        setId(Id);
+        setAbility(ability);
+    }
+
     public void setId(int Id){this.Id = Id;}
     public int getId(){return Id;}
 

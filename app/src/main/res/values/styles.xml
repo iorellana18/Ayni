@@ -24,7 +24,11 @@
         <item name="android:textColorHint">@color/secondary_lighter</item>
     </style>
 
-
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/primary_dark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
     <style name="Checkbox">
         <item name="android:textColor">@color/light</item>

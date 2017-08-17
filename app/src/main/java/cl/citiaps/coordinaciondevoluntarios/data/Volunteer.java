@@ -1,12 +1,13 @@
 package cl.citiaps.coordinaciondevoluntarios.data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Ian on 01-08-2017.
  */
-
-public class Volunteer {
+@SuppressWarnings("serial")
+public class Volunteer implements Serializable{
     private int Id;
     private int volunteer_status_id;
     private int user_id;

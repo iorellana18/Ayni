@@ -81,14 +81,13 @@
         android:text="@string/action_sign_in" />
 
     <Button
+        android:id="@+id/registerButton"
+        style="@style/adjacentButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/action_new_account"
-        android:id="@+id/registerButton"
-        android:layout_weight="0"
         android:layout_marginTop="20dp"
-        android:onClick="registerView"
-        style="@style/adjacentButton"/>
+        android:layout_weight="0"
+        android:text="@string/action_new_account" />
 
     <TextView
         android:text="@string/version"

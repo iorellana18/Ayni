@@ -1,12 +1,13 @@
 package cl.citiaps.coordinaciondevoluntarios.data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Joaco on 13-04-17.
  */
-
-public class UserData {
+@SuppressWarnings("serial")
+public class UserData implements Serializable{
     private int Id;
     private String email;
     private String first_name;

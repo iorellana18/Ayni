@@ -137,26 +137,11 @@ public class MissionRecruitedDetailActivity extends AppCompatActivity {
 
     public void missionInterestResponse(View view){
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(ApiInterface.API_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-
-        ApiInterface api = retrofit.create(ApiInterface.class);
-        Log.d("INTERES", "View ID " + view.getId());
-        Log.d("INTERES", "YES " + R.id.missionRecruitedDetailInterestYes);
-        Log.d("INTERES", "NO " + R.id.missionRecruitedDetailInterestNo);
-        MissionRecruitData missionRecruitData = new MissionRecruitData(); ;
-        int volunteerID = getSharedPreferences(
-                getString(R.string.user_data_preference_file_key), Context.MODE_PRIVATE).
-                getInt(getString(R.string.volunteer_id_preference_key), 0);
         switch(view.getId()) {
             case R.id.missionRecruitedDetailInterestYes:
-                missionRecruitData = new MissionRecruitData(missionID, volunteerID, true);
                 userResponse = true;
                 break;
             case R.id.missionRecruitedDetailInterestNo:
-                missionRecruitData = new MissionRecruitData(missionID, volunteerID, false);
                 userResponse = false;
                 break;
         }
@@ -179,15 +164,21 @@ public class MissionRecruitedDetailActivity extends AppCompatActivity {
                     new com.android.volley.Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            Toast.makeText(getApplicationContext(), "Problema reportado",
-                                    Toast.LENGTH_LONG).show();
                             Intent intent;
                             if(userResponse){
+                                Toast.makeText(getApplicationContext(), "Misión tomada",
+                                        Toast.LENGTH_LONG).show();
                                 intent = new Intent(getApplicationContext(), MissionTakeActivity.class);
                                 intent.putExtra("mission",missionData);
                                 startActivity(intent);
+                            }else{
+                                Toast.makeText(getApplicationContext(), "Misión rechazada",
+                                        Toast.LENGTH_LONG).show();
+                                intent = new Intent(getApplicationContext(),MissionsActivity.class);
+                                startActivity(intent);
+                                finish();
                             }
-                            finish();
+
                         }
                     },
                     new com.android.volley.Response.ErrorListener() {

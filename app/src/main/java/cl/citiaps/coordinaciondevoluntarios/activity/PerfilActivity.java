@@ -62,13 +62,11 @@ public class PerfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
-
         nombre = (EditText) findViewById(R.id.name);
         apellido = (EditText) findViewById(R.id.apellido);
         celular = (EditText) findViewById(R.id.celular);
         celular_emergencia = (EditText) findViewById(R.id.celular_emergencia);
         seguro_vida =  (CheckBox) findViewById(R.id.has_life_insurance);
-
         seguro_vida.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
                @Override

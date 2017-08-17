@@ -86,12 +86,14 @@ public class MissionsActivity extends AppCompatActivity {
         call.enqueue(new Callback<List<MissionResponse>>() {
             @Override
             public void onResponse(Call<List<MissionResponse>> call, Response<List<MissionResponse>> response) {
-                  emptyMission.setVisibility(View.GONE);
-                MissionListAdapter missionListAdapter = new MissionListAdapter(response.body(), getBaseContext());
-                listView.setAdapter(missionListAdapter);
-                spinner.setVisibility(View.GONE);
-                if (response.body().size() == 0){
-                    emptyMission.setVisibility(View.VISIBLE);
+
+                if (response.body() == null){
+                    emptyMission.setVisibility(View.GONE);
+                }else{
+                    emptyMission.setVisibility(View.GONE);
+                    MissionListAdapter missionListAdapter = new MissionListAdapter(response.body(), getBaseContext());
+                    listView.setAdapter(missionListAdapter);
+                    spinner.setVisibility(View.GONE);
                 }
 
             }
@@ -118,6 +120,12 @@ public class MissionsActivity extends AppCompatActivity {
             }
 
         });
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        loadData();
     }
 
     @Override

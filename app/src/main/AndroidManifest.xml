@@ -76,12 +76,25 @@
         <activity
             android:name=".activity.RegisterActivity"
             android:parentActivityName=".activity.LoginActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.Register3Activity"
+            android:parentActivityName=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
             android:name=".activity.MissionTakeActivity"
             android:parentActivityName=".activity.MissionTakeActivity"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.Register2Activity"
+            android:parentActivityName=".activity.MissionTakeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".activity.ProblemsActivity"
